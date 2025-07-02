@@ -4,13 +4,6 @@ import tempfile
 import dotenv
 from pathlib import Path
 
-# Load environment variables
-dotenv.load_dotenv()
-os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY', 'not-needed')
-os.environ['LANGCHAIN_API_KEY'] = os.getenv('LANGCHAIN_API_KEY', '')
-os.environ['LANGCHAIN_TRACING_V2'] = 'True'
-os.environ['LANGCHAIN_PROJECT'] = os.getenv('LANGCHAIN_PROJECT', 'streamlit-qa-app')
-
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OllamaEmbeddings
@@ -20,6 +13,13 @@ from langchain_community.llms import Ollama
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 
+
+# Load environment variables
+dotenv.load_dotenv()
+os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY', 'not-needed')
+os.environ['LANGCHAIN_API_KEY'] = os.getenv('LANGCHAIN_API_KEY', '')
+os.environ['LANGCHAIN_TRACING_V2'] = 'True'
+os.environ['LANGCHAIN_PROJECT'] = os.getenv('LANGCHAIN_PROJECT', 'streamlit-qa-app')
 # Page config
 st.set_page_config(
     page_title="Document Q&A Assistant",
