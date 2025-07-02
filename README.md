@@ -4,7 +4,7 @@
 A powerful AI-powered web application that allows users to upload PDF documents and ask questions about their content using natural language processing and local AI models.
 
 
-## ✨ Features
+##  Features
 
 - PDF Document Upload: Easy drag-and-drop PDF file upload
 - AI-Powered Q&A: Ask natural language questions about document content
@@ -27,7 +27,7 @@ A powerful AI-powered web application that allows users to upload PDF documents 
 ![Image](https://github.com/user-attachments/assets/7b8d1444-e7bc-438a-81cc-77c883bb1e5e)
 
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before running this application, ensure you have:
 
@@ -46,7 +46,7 @@ Before running this application, ensure you have:
 - Ensure Ollama service is running (it typically starts automatically)
 
 
-## 🛠️ Installation
+##  Installation
 
 ### Clone the repository:
 ```bash
@@ -75,7 +75,7 @@ LANGCHAIN_API_KEY=your_langchain_api_key_here
 LANGCHAIN_PROJECT=streamlit-qa-app
 ```
     
-## 🏃‍♂️ Running the Application
+##  Running the Application
 Start the Streamlit app:
 ```
 bashstreamlit run app.py
@@ -83,18 +83,18 @@ bashstreamlit run app.py
 
 - Open your browser and navigate to http://localhost:8501
 - Upload a PDF and start asking questions!
-## 🔧 How It Works
+##  How It Works
 -  Document Processing: PDFs are loaded using PyPDFLoader and split into chunks using RecursiveCharacterTextSplitter
 - Embeddings Generation: Text chunks are converted to embeddings using Ollama embeddings
 - Vector Storage: Embeddings are stored in a FAISS vector database for efficient similarity search
 - Question Processing: User questions are processed through a RAG (Retrieval-Augmented Generation) pipeline
 - Answer Generation: Relevant document chunks are retrieved and used as context for the Llama 3.2 model to generate answers
-## 🛡️ Privacy & Security
+##  Privacy & Security
 
 - Local Processing: All AI processing happens locally using Ollama - no data sent to external APIs
 - Temporary Files: Uploaded PDFs are temporarily stored and automatically cleaned up
 - Session-Based: Document data is stored only in the current session
-## ⚙️ Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -110,7 +110,7 @@ pythonembeddings = OllamaEmbeddings(model='llama3.2')  # Change embedding model
 llm = Ollama(model='llama3.2')  # Change LLM model
 ```
 
-## 🔧 Customization
+##  Customization
 
 - ### Chunk Size Configuration
 ```
@@ -119,7 +119,7 @@ pythonsplitter = RecursiveCharacterTextSplitter(
     chunk_overlap=200   # Adjust overlap
 )
 ```
-## 📊 Performance Tips
+##  Performance Tips
 
 ### Large Documents: 
 - For very large PDFs, consider increasing chunk size or implementing pagination
@@ -127,7 +127,7 @@ pythonsplitter = RecursiveCharacterTextSplitter(
 - Extend the app to handle multiple PDFs simultaneously
 ### Caching: 
 - Implement Streamlit caching for better performance with repeated queries
-## 🤝 Contributing 
+##  Contributing 
 -  Fork the repository Create a feature branch 
 ```(git checkout -b feature/amazing-feature)```
 - Commit your changes 
