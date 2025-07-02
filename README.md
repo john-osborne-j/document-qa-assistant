@@ -15,6 +15,17 @@ A powerful AI-powered web application that allows users to upload PDF documents 
 - Session Management: Clear sessions and chat history as needed
 - Responsive Design: Modern UI with gradient styling and responsive layout
 
+## Demo
+![Image](https://github.com/user-attachments/assets/eefc708d-9b3e-4cea-b8b1-7dfafe88d9e6)
+
+![Image](https://github.com/user-attachments/assets/233e2447-d08a-48e4-a468-00409887d352)
+
+![Image](https://github.com/user-attachments/assets/0b2190f4-436e-4460-b15b-6474249695a2)
+
+![Image](https://github.com/user-attachments/assets/5871b09e-b7b5-4601-8e2a-8fee0816bd3e)
+
+![Image](https://github.com/user-attachments/assets/7b8d1444-e7bc-438a-81cc-77c883bb1e5e)
+
 
 ## 📋 Prerequisites
 
