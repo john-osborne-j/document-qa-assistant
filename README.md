@@ -143,5 +143,5 @@ pythonsplitter = RecursiveCharacterTextSplitter(
 - Open an issue on GitHub
 - Contact [osbornej406@gmail.com]
 
-  -------------------------------------------------------------
+-------------------------------------------------------------
   ⭐ Star this repository if you found it helpful! ⭐
