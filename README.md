@@ -50,7 +50,7 @@ Before running this application, ensure you have:
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/yourusername/document-qa-assistant.git
+git clone https://github.com/john-osborne-j/document-qa-assistant.git
 ```
 ```
 cd document-qa-assistant
