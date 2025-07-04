@@ -50,7 +50,7 @@ Before running this application, ensure you have:
 
 ### Clone the repository:
 ```bash
-bashgit clone https://github.com/yourusername/document-qa-assistant.git
+git clone https://github.com/yourusername/document-qa-assistant.git
 ```
 ```
 cd document-qa-assistant
@@ -70,7 +70,7 @@ bashpip install -r requirements.txt
 ### Set up environment variables (optional):
 - #### Create a .env file in the project root:
 ```
-envOPENAI_API_KEY=not-needed
+OPENAI_API_KEY=not-needed
 LANGCHAIN_API_KEY=your_langchain_api_key_here
 LANGCHAIN_PROJECT=streamlit-qa-app
 ```
@@ -78,7 +78,7 @@ LANGCHAIN_PROJECT=streamlit-qa-app
 ##  Running the Application
 Start the Streamlit app:
 ```
-bashstreamlit run app.py
+streamlit run app.py
 ```
 
 - Open your browser and navigate to http://localhost:8501
